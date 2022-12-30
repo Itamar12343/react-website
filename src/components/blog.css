@@ -1,0 +1,107 @@
+.box {
+    height: 300px;
+    width: 30%;
+    background-color: rgb(245, 255, 208);
+    margin: 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.project-name {
+    font-size: 50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    text-align: left;
+    padding: 10px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.name-down {
+    font-size: 50px;
+    position: relative;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+    background-color: rgba(61, 61, 61, 0.4);
+    border-radius: 20px;
+    height: 65px;
+}
+
+.box:hover {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 125;
+    filter: brightness(50%);
+}
+
+.box-3 {
+    float: left;
+}
+
+.box-2 {
+    display: inline-block;
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%);
+    background-image: url("../media/Screenshot\ 2022-12-29\ 232523.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.box-2:hover {
+    transform: translate(-50%) scale(1.2);
+    position: absolute;
+}
+
+.box-1 {
+    float: right;
+    background-image: url("../media/Screenshot\ 2022-12-29\ 232640.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.all-box {
+    width: 100vw;
+    background-color: rgb(255, 255, 255, 0.4);
+    position: absolute;
+    left: 50%;
+    top: 66%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+@media all and (max-width:948px) {
+    .all-box {
+        top: 120%;
+    }
+    .box {
+        height: 300px;
+        width: 300px;
+        margin: 20px;
+        display: block;
+        margin-inline: auto;
+    }
+    .box-2 {
+        display: block;
+        position: relative;
+        left: 0%;
+        transform: translate(0%);
+    }
+    .box-2:hover {
+        transform: scale(1.2);
+        position: relative;
+    }
+    .box-1,
+    .box-3 {
+        float: none;
+    }
+}
